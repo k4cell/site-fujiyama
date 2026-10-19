@@ -22,7 +22,7 @@
   var atalhos = document.getElementById("categorias");
   var lista = document.getElementById("lista-cardapio");
 
-  dados.cardapio.forEach(function (categoria) {
+  dados.cardapio.forEach(function (categoria, indice) {
     var id = "cat-" + slug(categoria.categoria);
 
     var atalho = el("a", "categoria", categoria.categoria);
@@ -57,6 +57,14 @@
     corpo.appendChild(itens);
     bloco.appendChild(corpo);
     lista.appendChild(bloco);
+
+    // Divisória entre as linhas da grade de duas colunas
+    if (indice % 2 === 1 && indice < dados.cardapio.length - 1) {
+      var divisoria = el("div", "divisoria");
+      divisoria.setAttribute("aria-hidden", "true");
+      divisoria.appendChild(el("span"));
+      lista.appendChild(divisoria);
+    }
   });
 
   // Destaca a categoria visível nos atalhos

@@ -19,7 +19,8 @@ window.FUJIYAMA = {
   ],
 
   // preco: número (ex.: 29.9) ou null para mostrar "Consulte".
-  // foto: arquivo em img/fotos (opcional).
+  // foto: arquivo em img/fotos (opcional). fotoPosicao: parte da foto que fica
+  // em destaque quando ela é cortada (ex.: "center 30%" mostra mais o topo).
   cardapio: [
     {
       categoria: "Entradas",
@@ -170,6 +171,7 @@ window.FUJIYAMA = {
       categoria: "Tempurá",
       descricao: "Empanados.",
       foto: "tempura.jpg",
+      fotoPosicao: "center 35%",
       itens: [
         { nome: "Misto especial", detalhe: "Camarão, peixe, lula e legumes", preco: 99.1 },
         { nome: "Misto", detalhe: "Camarão e legumes", preco: 89.9 },
@@ -197,6 +199,7 @@ window.FUJIYAMA = {
     {
       categoria: "Yakisoba",
       foto: "yakisoba.jpg",
+      fotoPosicao: "center 45%",
       itens: [
         { nome: "Yakisoba especial", detalhe: "Carne, camarão, frango e legumes", preco: 88.9 },
         { nome: "Yakisoba carne", detalhe: "Com legumes", preco: 69.9 },
@@ -248,6 +251,7 @@ window.FUJIYAMA = {
     {
       categoria: "Bebidas",
       foto: "refrigerante.jpg",
+      fotoPosicao: "center 30%",
       itens: [
         { nome: "Café expresso", preco: 9.8 },
         { nome: "Feel Good / Ice Tea", preco: 14.9 },
@@ -275,6 +279,7 @@ window.FUJIYAMA = {
     {
       categoria: "Caipirinhas",
       foto: "caipirinha.jpg",
+      fotoPosicao: "center 25%",
       itens: [
         { nome: "Sakê", preco: 32.9 },
         { nome: "Sakê com frutas", preco: 33.9 },

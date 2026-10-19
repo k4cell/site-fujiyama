@@ -36,6 +36,7 @@
       img.src = "img/fotos/" + categoria.foto;
       img.alt = categoria.categoria;
       img.loading = "lazy";
+      if (categoria.fotoPosicao) img.style.objectPosition = categoria.fotoPosicao;
       bloco.appendChild(img);
     }
     var corpo = el("div", "grupo__corpo");

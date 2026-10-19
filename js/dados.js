@@ -315,6 +315,7 @@ window.FUJIYAMA = {
     {
       categoria: "Sobremesas",
       foto: "sobremesa.jpg",
+      fotoPosicao: "center 45%",
       itens: [
         { nome: "Creme de papaya", preco: 21.9 },
         { nome: "Banana flambada", preco: 21.9 },

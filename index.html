@@ -3,33 +3,56 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Restaurante Fujiyama | Culinária Japonesa em São Paulo</title>
-  <meta name="description" content="Restaurante Fujiyama: culinária japonesa na Rua Potsdam, 67, São Paulo. Veja o cardápio, horários e faça seu pedido pelo WhatsApp.">
-  <meta property="og:title" content="Restaurante Fujiyama">
-  <meta property="og:description" content="Culinária japonesa em São Paulo. Cardápio, horários e pedidos pelo WhatsApp.">
+  <title>Fujiyama Sushi | Culinária japonesa na Vila Leopoldina</title>
+  <meta name="description" content="Fujiyama Sushi: culinária japonesa na Rua Potsdam, 67, Vila Leopoldina, São Paulo. Cardápio completo, delivery, horários e pedidos pelo WhatsApp.">
+  <meta property="og:title" content="Fujiyama Sushi">
+  <meta property="og:description" content="Culinária japonesa na Vila Leopoldina. Cardápio completo, delivery e pedidos pelo WhatsApp.">
   <meta property="og:type" content="website">
-  <meta name="theme-color" content="#b3261e">
+  <meta property="og:image" content="img/fotos/combinado.jpg">
+  <meta name="theme-color" content="#0b0b0b">
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Fujiyama Sushi",
+    "servesCuisine": "Japonesa",
+    "telephone": "+55 11 3644-5012",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua Potsdam, 67",
+      "addressLocality": "São Paulo",
+      "addressRegion": "SP",
+      "postalCode": "05318-030",
+      "addressCountry": "BR"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday"], "opens": "11:30", "closes": "14:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday","Sunday"], "opens": "11:30", "closes": "15:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "18:30", "closes": "22:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "18:00", "closes": "21:00" }
+    ]
+  }
+  </script>
 </head>
 <body>
-  <header class="topo" id="topo">
+  <header class="topo">
     <div class="container topo__inner">
-      <a href="#inicio" class="marca" aria-label="Fujiyama, início">
-        <img src="img/favicon.svg" alt="" width="36" height="36">
-        <span>Fujiyama</span>
+      <a href="#inicio" class="marca" aria-label="Fujiyama Sushi, início">
+        <img src="img/logo.png" alt="Fujiyama Sushi" width="122" height="40">
       </a>
       <button class="menu-toggle" aria-expanded="false" aria-controls="nav" aria-label="Abrir menu">
         <span></span><span></span><span></span>
       </button>
       <nav class="nav" id="nav">
         <a href="#cardapio">Cardápio</a>
-        <a href="#sobre">Sobre</a>
+        <a href="#festivais">Festivais</a>
+        <a href="#delivery">Delivery</a>
         <a href="#localizacao">Localização</a>
-        <a href="#contato">Contato</a>
         <a href="#" class="btn btn--pequeno js-whatsapp">Pedir agora</a>
       </nav>
     </div>
@@ -37,14 +60,18 @@
 
   <main>
     <section class="hero" id="inicio">
-      <div class="hero__fundo" aria-hidden="true"></div>
-      <div class="container hero__conteudo">
-        <p class="hero__kicker">富士山 · Culinária Japonesa</p>
-        <h1>Restaurante Fujiyama</h1>
-        <p class="hero__texto">Sabores do Japão preparados com carinho, no coração de São Paulo.</p>
-        <div class="hero__acoes">
-          <a href="#cardapio" class="btn">Ver cardápio</a>
-          <a href="#" class="btn btn--claro js-whatsapp">Pedir pelo WhatsApp</a>
+      <div class="container hero__grid">
+        <div class="hero__conteudo">
+          <p class="hero__kicker">Irasshaimase! · Seja bem-vindo</p>
+          <h1><img src="img/logo.png" alt="Fujiyama Sushi" class="hero__logo" width="372" height="122"></h1>
+          <p class="hero__texto">Culinária japonesa na Vila Leopoldina. Sushi, sashimi, teppanyaki e muito mais, no salão ou no conforto da sua casa.</p>
+          <div class="hero__acoes">
+            <a href="#cardapio" class="btn">Ver cardápio</a>
+            <a href="#" class="btn btn--contorno js-whatsapp">Pedir pelo WhatsApp</a>
+          </div>
+        </div>
+        <div class="hero__foto">
+          <img src="img/fotos/niguiri.jpg" alt="Niguiri de atum" width="373" height="178">
         </div>
       </div>
     </section>
@@ -52,67 +79,91 @@
     <section class="secao" id="cardapio">
       <div class="container">
         <header class="secao__cabecalho">
-          <p class="secao__kicker">お品書き</p>
           <h2>Cardápio</h2>
+          <span class="filete" aria-hidden="true"></span>
         </header>
-        <div class="abas" role="tablist" id="abas"></div>
+      </div>
+      <nav class="categorias" aria-label="Categorias do cardápio">
+        <div class="categorias__lista" id="categorias"></div>
+      </nav>
+      <div class="container">
         <div id="lista-cardapio" class="cardapio"></div>
-        <p class="aviso">Preços e disponibilidade sujeitos a alteração.</p>
+        <p class="aviso">Preços em reais, sujeitos a alteração sem aviso prévio.</p>
       </div>
     </section>
 
-    <section class="secao secao--alt" id="sobre">
-      <div class="container sobre">
-        <div class="sobre__texto">
-          <p class="secao__kicker">私たちについて</p>
-          <h2>Sobre o Fujiyama</h2>
-          <p>Inspirado no monte Fuji, símbolo do Japão, o Fujiyama nasceu para trazer a culinária japonesa tradicional para a nossa vizinhança, com ingredientes frescos e muito cuidado em cada prato.</p>
-          <p>Venha nos visitar ou peça no conforto da sua casa.</p>
+    <section class="secao secao--foto" id="festivais">
+      <div class="container festivais">
+        <div class="festivais__foto">
+          <img src="img/fotos/combinado.jpg" alt="Combinado especial" loading="lazy">
         </div>
-        <ul class="destaques">
-          <li><strong>Ingredientes frescos</strong><span>Selecionados todos os dias</span></li>
-          <li><strong>Feito na hora</strong><span>Preparo artesanal</span></li>
-          <li><strong>Pedido fácil</strong><span>Direto pelo WhatsApp</span></li>
-        </ul>
+        <div>
+          <h2>Festivais</h2>
+          <span class="filete filete--esq" aria-hidden="true"></span>
+          <h3>Festival de Sushi</h3>
+          <ul class="festival" id="festival-sushi"></ul>
+          <h3>Festival Especial</h3>
+          <p>Consulte nossos garçons.</p>
+        </div>
       </div>
     </section>
 
-    <section class="secao" id="localizacao">
+    <section class="secao" id="delivery">
+      <div class="container">
+        <header class="secao__cabecalho">
+          <h2>Delivery e horários</h2>
+          <span class="filete" aria-hidden="true"></span>
+        </header>
+        <div class="delivery">
+          <div class="cartao">
+            <h3>Horários</h3>
+            <div id="horarios"></div>
+          </div>
+          <div class="cartao">
+            <h3>Peça pelo telefone</h3>
+            <ul class="telefones" id="telefones"></ul>
+            <a href="#" class="btn btn--bloco js-whatsapp">Pedir pelo WhatsApp</a>
+          </div>
+          <div class="cartao">
+            <h3>Eventos e reservas</h3>
+            <ul class="servicos">
+              <li>Entregamos em domicílio. Consulte a área.</li>
+              <li>Atendemos eventos residenciais.</li>
+              <li>Reservas para reuniões e confraternizações.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao secao--alt" id="localizacao">
       <div class="container local">
         <div class="local__info">
-          <p class="secao__kicker">アクセス</p>
-          <h2>Localização e horários</h2>
+          <h2>Localização</h2>
+          <span class="filete filete--esq" aria-hidden="true"></span>
           <address>
             Rua Potsdam, 67<br>
-            São Paulo/SP, CEP 05318-030
+            Vila Leopoldina, São Paulo/SP<br>
+            CEP 05318-030
           </address>
-          <h3>Horário de funcionamento</h3>
-          <ul class="horarios" id="horarios"></ul>
-          <a class="btn btn--contorno" target="_blank" rel="noopener" href="https://maps.app.goo.gl/aVvpHmxdsG9GQKbG8">Abrir no Google Maps</a>
+          <a class="btn btn--contorno" target="_blank" rel="noopener" href="https://maps.app.goo.gl/aVvpHmxdsG9GQKbG8">Como chegar</a>
         </div>
         <div class="local__mapa">
-          <iframe title="Mapa do Restaurante Fujiyama" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          <iframe title="Mapa do Fujiyama Sushi" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
             src="https://www.google.com/maps?q=Restaurante%20Fujiyama%2C%20Rua%20Potsdam%2C%2067%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005318-030&output=embed"></iframe>
-        </div>
-      </div>
-    </section>
-
-    <section class="secao secao--escura" id="contato">
-      <div class="container contato">
-        <h2>Bateu a fome?</h2>
-        <p>Faça seu pedido pelo WhatsApp ou fale com a gente.</p>
-        <div class="contato__acoes">
-          <a href="#" class="btn btn--claro js-whatsapp">WhatsApp</a>
-          <a href="#" class="btn btn--contorno-claro js-telefone">Ligar</a>
-          <a href="#" class="btn btn--contorno-claro js-instagram" target="_blank" rel="noopener">Instagram</a>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="rodape">
-    <div class="container">
-      <p>© <span id="ano"></span> Restaurante Fujiyama · Rua Potsdam, 67, São Paulo/SP</p>
+    <div class="container rodape__inner">
+      <img src="img/logo.png" alt="Fujiyama Sushi" width="122" height="40" loading="lazy">
+      <p>Rua Potsdam, 67 · Vila Leopoldina · São Paulo/SP</p>
+      <p class="rodape__links">
+        <a href="#" class="js-instagram" target="_blank" rel="noopener">Instagram</a>
+      </p>
+      <p class="rodape__copy">© <span id="ano"></span> Fujiyama Sushi</p>
     </div>
   </footer>
 

@@ -275,3 +275,18 @@ a { color: var(--dourado); }
   .pilares li { grid-template-columns: 28px 1fr; align-items: center; padding: 14px 18px; }
   .historia__selo { right: -8px; width: 54px; height: 54px; font-size: .95rem; }
 }
+
+/* Textura de grade fina no fundo, como papel quadriculado */
+.secao--clara {
+  background-color: #f6efe4;
+  background-image:
+    linear-gradient(rgba(176, 140, 90, .09) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(176, 140, 90, .09) 1px, transparent 1px);
+  background-size: 27px 27px;
+}
+body, .secao--foto, .secao--alt {
+  background-image:
+    linear-gradient(rgba(201, 164, 92, .035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(201, 164, 92, .035) 1px, transparent 1px);
+  background-size: 27px 27px;
+}

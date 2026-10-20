@@ -8,12 +8,13 @@
   <meta property="og:title" content="Fujiyama Sushi">
   <meta property="og:description" content="Culinária japonesa na Vila Leopoldina. Cardápio completo, delivery e pedidos pelo WhatsApp.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="img/fotos/combinado.jpg">
+  <meta property="og:image" content="img/fotos/sushiman.jpg">
   <meta name="theme-color" content="#0b0b0b">
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&text=%E4%BC%9D%E7%B5%B1%E4%B8%80%E4%BA%8C%E4%B8%89&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <script type="application/ld+json">
   {
@@ -34,7 +35,7 @@
       { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday"], "opens": "11:30", "closes": "14:30" },
       { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday","Sunday"], "opens": "11:30", "closes": "15:30" },
       { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "18:30", "closes": "22:00" },
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "18:00", "closes": "21:00" }
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "18:30", "closes": "21:00" }
     ]
   }
   </script>
@@ -49,6 +50,7 @@
         <span></span><span></span><span></span>
       </button>
       <nav class="nav" id="nav">
+        <a href="#historia">Nossa história</a>
         <a href="#cardapio">Cardápio</a>
         <a href="#festivais">Festivais</a>
         <a href="#delivery">Delivery</a>
@@ -62,9 +64,10 @@
     <section class="hero" id="inicio">
       <div class="container hero__grid">
         <div class="hero__conteudo">
-          <p class="hero__kicker">Irasshaimase! · Seja bem-vindo</p>
-          <h1><img src="img/logo.png" alt="Fujiyama Sushi" class="hero__logo" width="372" height="122"></h1>
-          <p class="hero__texto">Culinária japonesa na Vila Leopoldina. Sushi, sashimi, teppanyaki e muito mais, no salão ou no conforto da sua casa.</p>
+          <p class="hero__kicker">Irasshaimase! · Culinária japonesa de raiz</p>
+          <img src="img/logo.png" alt="Fujiyama Sushi" class="hero__logo" width="372" height="122">
+          <h1 class="hero__titulo">O verdadeiro sabor da tradição japonesa na Vila Leopoldina.</h1>
+          <p class="hero__texto">Sob o comando do sushiman Eduardo Seigi Saneto: peixes frescos, cortes precisos e pratos fartos, no salão ou no conforto da sua casa.</p>
           <div class="hero__acoes">
             <a href="#cardapio" class="btn">Ver cardápio</a>
             <a href="#" class="btn btn--contorno js-whatsapp">Pedir pelo WhatsApp</a>
@@ -72,6 +75,66 @@
         </div>
         <div class="hero__foto">
           <img src="img/fotos/niguiri.jpg" alt="Niguiri de atum" width="373" height="178">
+        </div>
+      </div>
+    </section>
+
+    <section class="secao secao--destaques" id="destaques">
+      <div class="container">
+        <header class="secao__cabecalho">
+          <p class="secao__kicker">Sabores que respeitam a origem</p>
+          <h2>Destaques da casa</h2>
+          <span class="filete" aria-hidden="true"></span>
+        </header>
+        <div class="destaques">
+          <a class="destaque" href="#cat-combinados">
+            <img src="img/fotos/destaque-sashimi.jpg" alt="Travessa de sushi e sashimi" loading="lazy" width="483" height="296">
+            <div class="destaque__corpo">
+              <span class="destaque__num">01</span>
+              <h3>Sushi e sashimi</h3>
+              <p>Peixes frescos e cortes feitos na hora, em combinados para 1 a 4 pessoas.</p>
+              <span class="destaque__link">A partir de R$ 95,90</span>
+            </div>
+          </a>
+          <a class="destaque" href="#cat-teppanyaki">
+            <img src="img/fotos/teppanyaki.jpg" alt="Teppanyaki com legumes" loading="lazy" width="452" height="804">
+            <div class="destaque__corpo">
+              <span class="destaque__num">02</span>
+              <h3>Pratos quentes</h3>
+              <p>Teppanyaki na chapa, tempurá e yakisoba, com arroz e missoshiru.</p>
+              <span class="destaque__link">Ver pratos quentes</span>
+            </div>
+          </a>
+          <a class="destaque" href="#cat-teishoku">
+            <img src="img/fotos/destaque-teishoku.jpg" alt="Mesa de teishoku com várias porções" loading="lazy" width="483" height="296">
+            <div class="destaque__corpo">
+              <span class="destaque__num">03</span>
+              <h3>Teishoku</h3>
+              <p>A refeição japonesa completa, farta e artesanal, servida em várias porções.</p>
+              <span class="destaque__link">Ver teishokus</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao secao--clara" id="historia">
+      <div class="container historia">
+        <figure class="historia__foto">
+          <img src="img/fotos/sushiman.jpg" alt="Sushiman Eduardo Seigi Saneto segurando uma travessa de sashimi" loading="lazy" width="430" height="646">
+          <span class="historia__selo" aria-hidden="true">伝統</span>
+        </figure>
+        <div class="historia__texto">
+          <p class="secao__kicker">Nossa história e o sushiman</p>
+          <h2>A tradição é servida todos os dias.</h2>
+          <span class="filete filete--esq" aria-hidden="true"></span>
+          <p>Eduardo Seigi Saneto trabalhou por anos na casa até assumir a tradição do antigo Mitsuba/Fujiyama. Hoje ele mantém viva uma cozinha japonesa de raiz, sem modismos: sashimi de corte preciso, combinados generosos e teishokus feitos com cuidado artesanal.</p>
+          <p class="historia__assinatura">Seigi Saneto</p>
+          <ul class="pilares">
+            <li><span>一</span><strong>Cortes precisos</strong></li>
+            <li><span>二</span><strong>Combinados generosos</strong></li>
+            <li><span>三</span><strong>Teishokus artesanais</strong></li>
+          </ul>
         </div>
       </div>
     </section>
@@ -108,7 +171,7 @@
       </div>
     </section>
 
-    <section class="secao" id="delivery">
+    <section class="secao secao--clara" id="delivery">
       <div class="container">
         <header class="secao__cabecalho">
           <h2>Delivery e horários</h2>

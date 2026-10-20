@@ -15,7 +15,7 @@ window.FUJIYAMA = {
     { turno: "Almoço", dias: "Terça a sexta", horas: "11:30 às 14:30" },
     { turno: "Almoço", dias: "Sábado e domingo", horas: "11:30 às 15:30" },
     { turno: "Jantar", dias: "Terça a sábado", horas: "18:30 às 22:00" },
-    { turno: "Jantar", dias: "Domingo", horas: "18:00 às 21:00" }
+    { turno: "Jantar", dias: "Domingo", horas: "18:30 às 21:00" }
   ],
 
   // preco: número (ex.: 29.9) ou null para mostrar "Consulte".
